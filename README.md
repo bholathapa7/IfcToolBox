@@ -50,6 +50,6 @@ Then repeat the same process again from first
 - You need to build first with command: dotnet build
 - Then you need to set permission for IfcConvert CLI:  sudo chmod +x IfcToolbox.Core/Convert/Resources/IfcConvert
 - Run the project with: dotnet run --project IfcToolBox.Examples <put ifc file full path here>
- E.g: dotnet run --project IfcToolbox.Examples/ home/angelswing/Desktop/projects/angelswing/Building.ifc
- 
+ E.g: dotnet run --project IfcToolbox.Examples/ /home/angelswing/Desktop/projects/angelswing/Building.ifc
+
 - A new folder gets created in the same path you providing the args for the ifc file with splitted ifc files and converted to .obj files
