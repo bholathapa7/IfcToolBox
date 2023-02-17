@@ -39,7 +39,7 @@ namespace IfcToolbox.Examples
             }
 
             EntityAnalyse.AnalyseHierarchy(pathName, true);
-            
+            AnalyseProcessor.GetGeoReference(pathName, null, true);
 
             DirectoryInfo di = new DirectoryInfo(result);
             string[] List = result.Split("/");
@@ -74,7 +74,6 @@ namespace IfcToolbox.Examples
 
             foreach (var file in filteredFilePaths)
             {
-                AnalyseProcessor.GetGeoReference(file, null, true);
                 IfcConverterSample.ConvertToObj(file.CopyToOutputFolder(result + "/"));
             }
 
